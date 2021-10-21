@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejercicio 7</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    
+  </head>  
+ 
+  <body>
+    <header class="cd-auto-hide-header">
+      <div class="logo"><a href="#0"><img src="imgs/logo.png" alt="Logo"></a></div>
+    
+      <nav class="cd-primary-nav">
+        <a href="#cd-navigation" class="nav-trigger">
+          <span>
+            <em aria-hidden="true"></em>
+            Menu
+          </span>
+        </a> <!-- .nav-trigger -->
+    
+        <ul id="cd-navigation">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="#0">Servicios</a></li>
+          <li><a href="#0">Contactanos</a></li>
+        </ul>
+      </nav> <!-- .cd-primary-nav -->
+    </header> <!-- .cd-auto-hide-header -->
+   <!-- Swiper -->
+
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><img src="imgs/imagen-1.jpg" /></div>
+      <div class="swiper-slide"><img src="imgs/imagen-2.jpg" /></div>
+      <div class="swiper-slide"> <img src="imgs/imagen-3.jpg" /></div>
+      <div class="swiper-slide"> <img src="imgs/imagen-4.jpg" /></div>
+      <div class="swiper-slide"> <img src="imgs/imagen-5.jpg" /></div>
+      <div class="swiper-slide"><img src="imgs/imagen-6.jpg" /></div>
+      <div class="swiper-slide"><img src="imgs/imagen-7.jpg" /></div>
+      <div class="swiper-slide"> <img src="imgs/imagen-8.jpg" /></div>
+      <div class="swiper-slide"> <img src="imgs/imagen-9.jpg" /></div>
+     
+      
+    <!--pagination-->
+  <div class=" swiper pagination"></div>
+  </div>
+
+   
+   <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <!--fin sliders-->
+</main> <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+   
+  </body>
+  </html>
